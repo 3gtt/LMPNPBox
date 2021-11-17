@@ -1,6 +1,6 @@
 # LMPNPBox
 
-[![CI Status](https://img.shields.io/travis/Liam Lincoln/LMPNPBox.svg?style=flat)](https://travis-ci.org/LiamLincoln/LMPNPBox)
+[![CI Status](https://img.shields.io/travis/LiamLincoln/LMPNPBox.svg?style=flat)](https://travis-ci.org/LiamLincoln/LMPNPBox)
 [![Version](https://img.shields.io/cocoapods/v/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 [![License](https://img.shields.io/cocoapods/l/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 [![Platform](https://img.shields.io/cocoapods/p/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
