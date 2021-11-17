@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - LMPNPBox (0.1.0):
+    - LMPNPBox/Core (= 0.1.0)
+  - LMPNPBox/Core (0.1.0):
+    - MQTTClient (~> 0.15.3)
+    - NIMSDK_LITE (~> 4.2.0)
+    - TXIMSDK_iOS (~> 4.4.900)
+  - MQTTClient (0.15.3):
+    - MQTTClient/Core (= 0.15.3)
+  - MQTTClient/Core (0.15.3):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.15.3):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.15.3)
+  - NIMSDK_LITE (4.2.0)
+  - ObjectMapper (4.2.0)
+  - SnapKit (4.2.0)
+  - TXIMSDK_iOS (4.4.900)
+
+DEPENDENCIES:
+  - Alamofire
+  - LMPNPBox (from `../`)
+  - ObjectMapper
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - MQTTClient
+    - NIMSDK_LITE
+    - ObjectMapper
+    - SnapKit
+    - TXIMSDK_iOS
+
+EXTERNAL SOURCES:
+  LMPNPBox:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  LMPNPBox: 9b13648ea49b28e872d4ea2ad77d88929e808f4e
+  MQTTClient: 0dfa04e789479c2e461786464969895c1fcb0875
+  NIMSDK_LITE: 58c940f7f3f2526c0083a40bb499c8da819b96f8
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TXIMSDK_iOS: 54c04c0807ccf0c406366ef86cff663ea277e235
+
+PODFILE CHECKSUM: 03f8783b6804a89d363af6eb9a3b91dd7081b82b
+
+COCOAPODS: 1.11.2

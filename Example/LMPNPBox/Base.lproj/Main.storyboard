@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ClW-RF-oWQ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="397-3J-XRA">
+            <objects>
+                <navigationController id="ClW-RF-oWQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4DL-8W-KP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zLs-Oa-hle"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Up2-lQ-mkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1305" y="78"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="LMPNPBox_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Bg-9m-5ak">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="sO6-l3-HN8" kind="show" identifier="NIMIdentifier" id="gYf-p8-IPI"/>
+                        <segue destination="tef-WS-N9d" kind="show" identifier="TIMIdentifier" id="ARJ-EV-NBn"/>
+                        <segue destination="g48-dB-TK3" kind="show" identifier="AliyunIdentifier" id="t2b-ZA-RmK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="86"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zRt-Oo-RJC">
+            <objects>
+                <viewController id="tef-WS-N9d" customClass="IMTIMViewController" customModule="LMPNPBox_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FOi-zn-nLR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yx2-HF-RXy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="loi-W3-nWQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rqs-aQ-27w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fy0-hI-bo6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="78"/>
+        </scene>
+        <!--Aliyun View Controller-->
+        <scene sceneID="PoL-4s-etv">
+            <objects>
+                <viewController id="g48-dB-TK3" customClass="IMAliyunViewController" customModule="LMPNPBox_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1TP-Xi-n2t"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJW-fP-UTP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gU5-8H-HJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ked-HD-hAu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdm-AA-BUT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="848"/>
+        </scene>
+        <!--IMNIMViewController-->
+        <scene sceneID="QMp-Vr-5vg">
+            <objects>
+                <viewController id="sO6-l3-HN8" userLabel="IMNIMViewController" customClass="IMNIMViewController" customModule="LMPNPBox_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAg-L2-T4Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jbk-cH-Kq0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UEE-Df-98u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kkj-Zx-d9o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItQ-DN-Kgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="-773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
