@@ -185,24 +185,12 @@
 		A64F63B72744800B00E706C7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A64F63B82744800B00E706C7 /* ViewController.swift */,
-				A64F63B92744800B00E706C7 /* IMMessageDefines.swift */,
-				A64F63BA2744800B00E706C7 /* IMTIMTableViewCell.swift */,
-				A64F63BB2744800B00E706C7 /* BaseIMMessageModel.swift */,
-				A64F63BC2744800B00E706C7 /* IMTIMViewController.swift */,
-				A64F63BD2744800B00E706C7 /* MessageHandleQueue.swift */,
-				A64F63BE2744800B00E706C7 /* IMMessageSender.swift */,
-				A64F63BF2744800B00E706C7 /* IMAliyunTableViewCell.swift */,
+				A64F63E42744865C00E706C7 /* IMMessage */,
+				A64F63E22744861900E706C7 /* Cell */,
+				A64F63E12744860800E706C7 /* Extension */,
+				A64F63E0274485F300E706C7 /* Model */,
+				A64F63DF274485CC00E706C7 /* ViewControllers */,
 				A64F63C02744800B00E706C7 /* Network */,
-				A64F63C22744800B00E706C7 /* TableViewCell.swift */,
-				A64F63C32744800B00E706C7 /* IMMessageReceiver.swift */,
-				A64F63C42744800B00E706C7 /* IMNIMTableViewCell.swift */,
-				A64F63C52744800B00E706C7 /* IMNIMViewController.swift */,
-				A64F63C62744800B00E706C7 /* String+Extension.swift */,
-				A64F63C72744800B00E706C7 /* IMMessageManager.swift */,
-				A64F63C82744800B00E706C7 /* IMPlatformUserInfoModel.swift */,
-				A64F63C92744800B00E706C7 /* IMMessageModels.swift */,
-				A64F63CA2744800B00E706C7 /* IMAliyunViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -213,6 +201,58 @@
 				A64F63C12744800B00E706C7 /* NetWorkingManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A64F63DF274485CC00E706C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A64F63B82744800B00E706C7 /* ViewController.swift */,
+				A64F63BC2744800B00E706C7 /* IMTIMViewController.swift */,
+				A64F63C52744800B00E706C7 /* IMNIMViewController.swift */,
+				A64F63CA2744800B00E706C7 /* IMAliyunViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A64F63E0274485F300E706C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A64F63C82744800B00E706C7 /* IMPlatformUserInfoModel.swift */,
+				A64F63BB2744800B00E706C7 /* BaseIMMessageModel.swift */,
+				A64F63C92744800B00E706C7 /* IMMessageModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A64F63E12744860800E706C7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A64F63C62744800B00E706C7 /* String+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A64F63E22744861900E706C7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A64F63C22744800B00E706C7 /* TableViewCell.swift */,
+				A64F63BA2744800B00E706C7 /* IMTIMTableViewCell.swift */,
+				A64F63BF2744800B00E706C7 /* IMAliyunTableViewCell.swift */,
+				A64F63C42744800B00E706C7 /* IMNIMTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A64F63E42744865C00E706C7 /* IMMessage */ = {
+			isa = PBXGroup;
+			children = (
+				A64F63B92744800B00E706C7 /* IMMessageDefines.swift */,
+				A64F63BD2744800B00E706C7 /* MessageHandleQueue.swift */,
+				A64F63BE2744800B00E706C7 /* IMMessageSender.swift */,
+				A64F63C32744800B00E706C7 /* IMMessageReceiver.swift */,
+				A64F63C72744800B00E706C7 /* IMMessageManager.swift */,
+			);
+			path = IMMessage;
 			sourceTree = "<group>";
 		};
 		BB0F91FF88C8F9EE333D1C9A /* Pods */ = {
