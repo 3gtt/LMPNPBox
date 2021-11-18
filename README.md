@@ -1,6 +1,6 @@
 # LMPNPBox
 
-[![CI Status](https://img.shields.io/travis/Liam Lincoln/LMPNPBox.svg?style=flat)](https://travis-ci.org/Liam Lincoln/LMPNPBox)
+[![CI Status](https://img.shields.io/travis/3gtt/LMPNPBox.svg?style=flat)](https://travis-ci.org/3gtt/LMPNPBox)
 [![Version](https://img.shields.io/cocoapods/v/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 [![License](https://img.shields.io/cocoapods/l/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 [![Platform](https://img.shields.io/cocoapods/p/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
@@ -39,6 +39,6 @@ pod 'LMPNPBox', '~> 0.1.0' :subspecs => ['TIM', 'NIM', 'AliyunMQTT']
 
 LMPNPBox在MIT许可下可用。更多信息请参见LICENSE文件。
 
-## Notice
+## 须知
 
 本项目仅供技术交流，请告知侵权行为。
