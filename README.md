@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 [![Platform](https://img.shields.io/cocoapods/p/LMPNPBox.svg?style=flat)](https://cocoapods.org/pods/LMPNPBox)
 
-A fast integration of multiple IM communication plug-in.
+一个快速集成多个IM通信插件。
 
 ## 示例项目
 
