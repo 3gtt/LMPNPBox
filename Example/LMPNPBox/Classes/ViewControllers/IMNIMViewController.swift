@@ -47,6 +47,9 @@ class IMNIMViewController: ViewController {
 //            loginConfig: loginConfig
 //        )
 //        let transport = NIMTransport(configuration: configuration)
+        /// 注意： 这里必须断开连接，因为不同平台的session是不同的对象，
+        /// 但他们都是同一个session变量
+        /// 防止上一个session对象没有断开而直接替换了别的平台的seesion
 //        if LMPNPIMBoxClient.sharedInstance().session?.sessionStatus == .connected {
 //            self.disconnect()
 //        }
