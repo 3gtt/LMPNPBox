@@ -51,19 +51,13 @@ class IMMessageManager: NSObject {
         
         switch self.currentIMPlatform {
         case .aliyunMqtt:
-            guard let info = platformInfo as? ALMQTTUserInfoModel else {
-                return
-            }
+            guard let info = platformInfo as? ALMQTTUserInfoModel else { return }
             connectMQTTPlatform(info: info)
         case .nim:
-            guard let info = platformInfo as? NIMUserInfoModel else {
-                return
-            }
+            guard let info = platformInfo as? NIMUserInfoModel else { return }
             connectNIMPlatform(info: info)
         case .tim:
-            guard let info = platformInfo as? TIMUserInfoModel else {
-                return
-            }
+            guard let info = platformInfo as? TIMUserInfoModel else { return }
             connectTIMPlatform(info: info)
             
         default: break
