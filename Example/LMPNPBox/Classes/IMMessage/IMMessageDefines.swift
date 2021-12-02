@@ -9,7 +9,7 @@
 import UIKit
 import ObjectMapper
 
-/// 消息的类型， 发送接收消息的包装器都是 ChatWrapperMessageModel ，你也可以自定义包装器
+/// 消息的类型， 发送接收消息的包装器都是 WrapperMessageModel ，你也可以自定义包装器
 /// 所以需要区分是接收还是发送
 enum IMMessageType: String {
     
