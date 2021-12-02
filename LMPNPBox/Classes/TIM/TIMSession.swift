@@ -27,12 +27,15 @@ class TIMSession: BaseSession, IMSessionInitializeProtocol {
         loginParam.identifier = self.transport.configuration.loginConfig.id
         loginParam.userSig = self.transport.configuration.loginConfig.token
         
-        TIMManager.sharedInstance()?.login(loginParam, succ: {
-            completionClosure(nil)
-        }, fail: { (code, message) in
-            let error = IMError.connectFailure(message: "code = \(code), messsage = \(message ?? "")")
-            completionClosure(error)
-        })
+        TIMManager.sharedInstance()?.login(
+            loginParam,
+            succ: {
+                completionClosure(nil)
+            }, fail: { (code, message) in
+                let error = IMError.connectFailure(message: "code = \(code), messsage = \(message ?? "")")
+                completionClosure(error)
+            }
+        )
     }
     
     override func disconnect(completionClosure: @escaping (_ error: IMError?) -> Void) {
@@ -69,12 +72,15 @@ class TIMSession: BaseSession, IMSessionInitializeProtocol {
         message.add(textElement)
         
         let session = TIMManager.sharedInstance()?.getConversation(.C2C, receiver: id)
-        session?.sendOnlineMessage(message, succ: {
-            completionClosure(nil, data)
-        }, fail: { (code, message) in
-            let error = IMError.sendMessageFailure(message: "code = \(code), messsage = \(message ?? "")")
-            completionClosure(error, data)
-        })
+        session?.sendOnlineMessage(
+            message,
+            succ: {
+                completionClosure(nil, data)
+            }, fail: { (code, message) in
+                let error = IMError.sendMessageFailure(message: "code = \(code), messsage = \(message ?? "")")
+                completionClosure(error, data)
+            }
+        )
     }
 }
 

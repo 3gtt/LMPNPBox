@@ -48,7 +48,8 @@ class NIMLiteSession: BaseSession, IMSessionInitializeProtocol {
     
     /// 发布消息
     /// - Parameters:
-    ///   - data: 消息包 data.desId  会话ID,如果当前session为team,则sessionId为teamId,如果是P2P则为对方帐号 accid
+    ///   - data: 消息包 data.desId  会话ID
+    ///           如果当前session为team, 则sessionId为teamId, 如果是P2P则为对方帐号 accid
     ///   - completionClosure: 回调
     override func publishData<Data: IMMessageProtocol>(
         with data: Data,
@@ -65,7 +66,10 @@ class NIMLiteSession: BaseSession, IMSessionInitializeProtocol {
         
         let session = NIMSession(id, type: .P2P)
         let notification = NIMCustomSystemNotification(content: content)
-        NIMSDK.shared().systemNotificationManager.sendCustomNotification(notification, to: session) { (error) in
+        NIMSDK.shared().systemNotificationManager.sendCustomNotification(
+            notification,
+            to: session
+        ) { (error) in
             let err: IMError?
             if nil != error {
                 err = IMError.sendMessageFailure(message: error?.localizedDescription ?? "Unknown")
